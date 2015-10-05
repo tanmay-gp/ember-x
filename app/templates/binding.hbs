@@ -1,0 +1,15 @@
+<h2 id="title">Wassup?</h2>
+
+{{#if toHide}}
+  <button {{action "toggleBinding"}} class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+    Show Binding
+  </button>
+  <div class="text">
+    <h3>No Binding for you!</h3>
+  </div>
+{{else}}
+  <button {{action "toggleBinding"}} class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent">
+    Hide Binding
+  </button>
+  {{component "input-text" title="Enter Your Name..." id="yo"}}
+{{/if}}

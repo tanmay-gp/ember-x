@@ -1,3 +1,52 @@
-<h2 id="title">Welcome to Ember</h2>
+<!-- Always shows a header, even in smaller screens. -->
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Ember-X</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="">1</a>
+        <a class="mdl-navigation__link" href="">2</a>
+        <a class="mdl-navigation__link" href="">3</a>
+        <a class="mdl-navigation__link" href="">4</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Ember-X</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">1</a>
+      <a class="mdl-navigation__link" href="">2</a>
+      <a class="mdl-navigation__link" href="">3</a>
+      <a class="mdl-navigation__link" href="">4</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <!-- Your content goes here -->
+      <div class="mdl-grid">
+        <div class="mdl-cell mdl-cell--1-col">
+          
+        </div>
+        <div class="mdl-cell mdl-cell--10-col">
+          <h2 id="title">Wassup?</h2>
 
-{{outlet}}
+          {{outlet}}
+
+          <div class="mdl-textfield mdl-js-textfield">
+            {{input type="text" value=name placeholder="Enter your name" class="mdl-textfield__input"}}
+          </div>
+          <div class="text">
+            <h3>My name is {{name}} and I want to learn Ember!</h3>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </main>
+</div>
+
+

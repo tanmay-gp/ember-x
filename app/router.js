@@ -7,6 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('binding', {path: '/binding'});
+  this.route('github');
 });
 
 export default Router;
